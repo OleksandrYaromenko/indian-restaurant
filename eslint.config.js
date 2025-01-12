@@ -26,7 +26,8 @@ export default [
       'no-trailing-spaces': ['error'],
       'semi-spacing': ['error', { before: false, after: true }],
       'no-multi-spaces': ['error'],
-      'space-in-parens': ['error', 'never']
+      'space-in-parens': ['error', 'never'],
+      'no-irregular-whitespace': 'error'
     }
   }
 ];
