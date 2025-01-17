@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 70px;
+}
+.title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ebebeb;
+}
+
+.paragraf {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+
+  color: #ebebeb;
+}
+.paragraf_container {
+  gap: 20px;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.foto_cotainer {
+  gap: 10px;
+  display: inline-flex;
+}
+.foto {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.foto:hover {
+  -webkit-filter: sepia(0);
+  filter: sepia(0);
+}
+
+// .swiper {
+//   width: 100%;
+//   height: 100%;
+// }
+
+// .swiper-slide {
+//   text-align: center;
+//   font-size: 18px;
+//   background: #fff;
+
+//   /* Center slide text vertically */
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+// }
