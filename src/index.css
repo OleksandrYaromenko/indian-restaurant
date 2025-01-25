@@ -18,3 +18,9 @@ h2 {
   margin: 0;
   padding: 0;
 }
+.swiper-button-prev::after {
+  color: #f89345;
+}
+.swiper-button-next::after {
+  color: #f89345;
+}
