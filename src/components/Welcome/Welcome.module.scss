@@ -11,27 +11,7 @@
   flex-wrap: nowrap;
   flex-direction: column;
 }
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 100px;
-  gap: 10px;
-  background: #faaf75;
-  border-radius: 100px;
-  border: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  color: #0d0e06;
-  transition: 0.4s;
-}
-.button:hover {
-  background-color: #f89345;
-}
+
 .paragraf {
   font-family: 'Inter';
   font-style: normal;

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import scss from './Header.module.scss';
+import MyButton from '../Button/MyButton';
 export default function Header(): JSX.Element {
   return (
     <header className={scss.container}>
@@ -17,7 +18,7 @@ export default function Header(): JSX.Element {
           DELIVERY
         </NavLink>
         <div>
-          <button className={scss.button}>RESERVATION</button>
+          <MyButton text="RESERVATION" padding="10px 35px" />
         </div>
       </nav>
     </header>

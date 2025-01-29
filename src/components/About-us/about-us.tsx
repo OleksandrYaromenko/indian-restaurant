@@ -1,8 +1,9 @@
+import Title from '../Title/Title';
 import scss from './about-us.module.scss';
 export default function About(): JSX.Element {
   return (
     <div className={scss.container}>
-      <h3 className={scss.title}>ABOUT US</h3>
+      <Title text="ABOUT US" />
       <div className={scss.paragraf_container}>
         <p className={scss.paragraf}>
           Our Indian restaurant was born out of a passion for Indian culture and

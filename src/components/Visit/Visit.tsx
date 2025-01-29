@@ -3,16 +3,17 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import scss from './visit.module.scss';
+import Title from '../Title/Title';
 export default function Visit(): JSX.Element {
   return (
     <div className={scss.container}>
-      <h2 className={scss.title}>WHY VISIT US?</h2>
+      <Title text="WHY VISIT US?" />
       <div>
         <Swiper
           cssMode={true}
           navigation={true}
           modules={[Navigation]}
-          className={scss.mySwiper}
+          className="mySwiper"
         >
           <SwiperSlide>
             <div className={scss.swiper_container}>
@@ -37,11 +38,13 @@ export default function Visit(): JSX.Element {
           </SwiperSlide>
           <SwiperSlide>
             <div className={scss.swiper_container}>
-              <h3 className={scss.title_swiper}>Warm Hospitality</h3>
-              <p className={scss.paragraf_swiper}>
-                Our friendly and attentive staff ensure you feel welcome and
-                cherished from the moment you step in.
-              </p>
+              <div>
+                <h3 className={scss.title_swiper}>Warm Hospitality</h3>
+                <p className={scss.paragraf_swiper}>
+                  Our friendly and attentive staff ensure you feel welcome and
+                  cherished from the moment you step in.
+                </p>
+              </div>
               <img
                 src="/public/img/visit/visit2.jpg"
                 alt=""
@@ -52,11 +55,14 @@ export default function Visit(): JSX.Element {
           </SwiperSlide>
           <SwiperSlide>
             <div className={scss.swiper_container}>
-              <h3 className={scss.title_swiper}>Something for Everyone</h3>
-              <p className={scss.paragraf_swiper}>
-                From rich curries and fragrant biryanis to a variety of
-                vegetarian and vegan options, we cater to all taste preferences
-              </p>
+              <div>
+                <h3 className={scss.title_swiper}>Something for Everyone</h3>
+                <p className={scss.paragraf_swiper}>
+                  From rich curries and fragrant biryanis to a variety of
+                  vegetarian and vegan options, we cater to all taste
+                  preferences
+                </p>
+              </div>
               <img
                 src="/public/img/visit/visit3.jpg"
                 alt=""
@@ -67,11 +73,13 @@ export default function Visit(): JSX.Element {
           </SwiperSlide>
           <SwiperSlide>
             <div className={scss.swiper_container}>
-              <h3 className={scss.title_swiper}>Community Favorite</h3>
-              <p className={scss.paragraf_swiper}>
-                Loved by locals and visitors alike, our consistent quality and
-                flavors make us a must-visit spot.
-              </p>
+              <div>
+                <h3 className={scss.title_swiper}>Community Favorite</h3>
+                <p className={scss.paragraf_swiper}>
+                  Loved by locals and visitors alike, our consistent quality and
+                  flavors make us a must-visit spot.
+                </p>
+              </div>
               <img
                 src="/public/img/visit/visit4.jpg"
                 alt=""
