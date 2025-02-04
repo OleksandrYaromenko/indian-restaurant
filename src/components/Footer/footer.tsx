@@ -73,9 +73,21 @@ export default function Footer(): JSX.Element {
       </div>
       <div>
         <ul>
-          <li><a href='/' className={scss.icon}>HOME</a></li>
-          <li><a href='/Menu' className={scss.icon}>MENU</a></li>
-          <li><a href='/Delivery' className={scss.icon}>DELIVERY</a></li>
+          <li>
+            <a href="/" className={scss.icon}>
+              HOME
+            </a>
+          </li>
+          <li>
+            <a href="/Menu" className={scss.icon}>
+              MENU
+            </a>
+          </li>
+          <li>
+            <a href="/Delivery" className={scss.icon}>
+              DELIVERY
+            </a>
+          </li>
         </ul>
       </div>
     </section>

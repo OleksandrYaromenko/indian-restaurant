@@ -1,22 +1,22 @@
-.container{
+.container {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   align-content: center;
   justify-content: space-around;
 }
-.info{
+.info {
   width: 400px;
 }
-.contact{
+.contact {
   color: #faaf75;
   margin-left: 10px;
   text-decoration: none;
   transition: 0.4s;
 }
-.contact:hover{
+.contact:hover {
   color: #f89345;
 }
-.color{
+.color {
   color: #faaf75;
 }

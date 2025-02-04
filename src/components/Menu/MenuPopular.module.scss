@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  .menu{
+  .menu {
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -15,8 +15,7 @@
     height: 400px;
     border: 4px ridge #f89345;
 
-
-    .flex{
+    .flex {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -38,26 +37,26 @@
       letter-spacing: 0.03em;
       color: #ebebeb;
     }
-    .menu_img_paragraf{
+    .menu_img_paragraf {
       display: flex;
       font-style: normal;
       font-weight: 500;
       font-size: 15px;
       line-height: 218%;
       letter-spacing: 0.03em;
-      color: #EBEBEB;
-
+      color: #ebebeb;
     }
   }
-
 }
 .container_box:hover .hidden__text {
   opacity: 1;
   transform: translateY(0%);
 }
 .container_box:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-  1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .hidden {
@@ -83,9 +82,12 @@
     transform: translateY(100%);
     background-color: rgba(0, 0, 0, 0.3);
     color: black;
-    transition: opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms, transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    transition:
+      opacity cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+      transform cubic-bezier(0.4, 0, 0.2, 1) 250ms;
     justify-content: center;
-    align-items: center;}
+    align-items: center;
+  }
 
   &__paragraph {
     font-size: 18px;
