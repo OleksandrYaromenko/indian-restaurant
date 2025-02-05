@@ -3,7 +3,7 @@ import Title from '../Title/Title.tsx';
 import MyButton from '../Button/MyButton.tsx';
 export default function MenuPopular(): JSX.Element {
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <Title text={'POPULAR MENU'} />
       <div className={scss.menu}>
         <div className={scss.container_box}>
@@ -87,6 +87,6 @@ export default function MenuPopular(): JSX.Element {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       );
       }

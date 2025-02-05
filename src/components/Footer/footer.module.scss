@@ -1,5 +1,4 @@
 .container {
-  margin-top: 80px;
   background-color: #faaf75;
   padding: 40px;
   display: flex;
@@ -7,10 +6,10 @@
   justify-content: space-around;
   align-items: center;
 }
-.flex{
+.flex {
   display: flex;
 }
-.logo{
+.logo {
   font-family: 'Kanit';
   font-style: normal;
   font-weight: 700;
@@ -20,23 +19,23 @@
   color: black;
   transition: 0.4s;
 }
-.logo:hover{
+.logo:hover {
   color: aliceblue;
 }
-.contact{
+.contact {
   color: black;
   margin-left: 10px;
   text-decoration: none;
   transition: 0.4s;
 }
-.contact:hover{
+.contact:hover {
   color: aliceblue;
 }
-.icon{
+.icon {
   color: black;
   transition: 0.6s;
   text-decoration: none;
 }
-.icon:hover{
+.icon:hover {
   color: aliceblue;
 }

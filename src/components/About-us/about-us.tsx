@@ -2,7 +2,7 @@ import Title from '../Title/Title';
 import scss from './about-us.module.scss';
 export default function About(): JSX.Element {
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <Title text="ABOUT US" />
       <div className={scss.paragraf_container}>
         <p className={scss.paragraf}>
@@ -29,6 +29,6 @@ export default function About(): JSX.Element {
         <img className={scss.foto} src="/img/about/about2.jpg" alt="restoran" />
         <img className={scss.foto} src="/img/about/about3.jpg" alt="women" />
       </div>
-    </div>
+    </section>
   );
 }
