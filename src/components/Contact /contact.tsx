@@ -5,9 +5,10 @@ import { IoMdMail, IoMdTime } from 'react-icons/io';
 import { MdContactPhone } from 'react-icons/md';
 import scss from './contact.module.scss';
 import { BsFillTelephoneInboundFill } from 'react-icons/bs';
+
 export default function Contact(): JSX.Element {
   return (
-    <div>
+    <section>
       <div>
         <Title text={'Contact detais'} />
       </div>
@@ -100,6 +101,6 @@ export default function Contact(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

@@ -4,7 +4,7 @@ import scss from './footer.module.scss';
 import { BsFillTelephoneInboundFill } from 'react-icons/bs';
 export default function Footer(): JSX.Element {
   return (
-    <section className={scss.container}>
+    <div className={scss.container}>
       <div>
         <a href={'/'} className={scss.logo}>
           India Cafe
@@ -90,6 +90,6 @@ export default function Footer(): JSX.Element {
           </li>
         </ul>
       </div>
-    </section>
+    </div>
   );
 }

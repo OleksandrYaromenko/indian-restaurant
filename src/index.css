@@ -9,6 +9,10 @@ li {
 a {
   text-decoration: none;
 }
+section{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 ul {
   margin-left: 0;

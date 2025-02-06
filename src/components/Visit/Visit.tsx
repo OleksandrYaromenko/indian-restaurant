@@ -6,7 +6,7 @@ import scss from './visit.module.scss';
 import Title from '../Title/Title';
 export default function Visit(): JSX.Element {
   return (
-    <div className={scss.container}>
+    <section className={scss.container}>
       <Title text="WHY VISIT US?" />
       <div>
         <Swiper
@@ -90,6 +90,6 @@ export default function Visit(): JSX.Element {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }
