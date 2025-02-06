@@ -1,12 +1,12 @@
 body {
   margin: 0;
-  background:url("/public/img/138280043_aa9b66e9-0f9b-4aed-834b-f846a7cc272b.jpg");
+  background: url('/public/img/138280043_aa9b66e9-0f9b-4aed-834b-f846a7cc272b.jpg');
 }
 li {
   list-style-type: none;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 section{
@@ -23,11 +23,11 @@ ul {
 p,
 h1,
 h2 {
-  margin: 0 ;
+  margin: 0;
   margin-bottom: 0 !important;
   padding: 0;
 }
-p{
+p {
   margin-bottom: 0rem;
 }
 .swiper-button-prev::after {
@@ -52,26 +52,26 @@ p{
   color: #f89345;
 }
 
-.accordion  .accordion-header {
-  font-size: 18px;          /* Змінити розмір тексту заголовків */
+.accordion .accordion-header {
+  font-size: 18px; /* Змінити розмір тексту заголовків */
   font-weight: bold;
-  color:#f89345;
+  color: #f89345;
 }
 
 .accordion .accordion-button {
-  background-color:black; /* Синій фон кнопки */
-  color: floralwhite;              /* Білий текст */
-  border: none;              /* Видалення бордеру */
+  background-color: black; /* Синій фон кнопки */
+  color: floralwhite; /* Білий текст */
+  border: none; /* Видалення бордеру */
 }
 
 .accordion .accordion-button:not(.collapsed) {
-  background-color:black;
+  background-color: black;
   color: floralwhite;
 }
 .accordion-body {
-  padding: 20px;             /* Змінити відступи всередині тіла */
-  background-color:black; /* Фон для тексту */
-  color: floralwhite;               /* Сірий текст */
+  padding: 20px; /* Змінити відступи всередині тіла */
+  background-color: black; /* Фон для тексту */
+  color: floralwhite; /* Сірий текст */
 }
 
 .accordion .accordion-button:focus {
@@ -79,5 +79,3 @@ p{
   box-shadow: 0 0 0 0.2rem rgba(249, 147, 69, 0.5); /* Додає м'який кольоровий фокус */
   border-color: #f89345; /* Змінює колір бордера */
 }
-
-
