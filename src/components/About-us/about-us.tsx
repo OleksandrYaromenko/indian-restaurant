@@ -1,28 +1,16 @@
 import Title from '../Title/Title';
 import scss from './about-us.module.scss';
+import { useTranslation } from 'react-i18next';
+
 export default function About(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <div className={scss.container}>
-      <Title text="ABOUT US" />
+      <Title text={t('title_about')} />
       <div className={scss.paragraf_container}>
-        <p className={scss.paragraf}>
-          Our Indian restaurant was born out of a passion for Indian culture and
-          a desire to share the richness of its culinary traditions.
-        </p>
-        <p className={scss.paragraf}>
-          It all began with a journey to India, where the founders were
-          captivated by the extraordinary harmony of flavors, aromas, and the
-          heartfelt hospitality that became an integral part of their
-          experience.
-        </p>
-        <p className={scss.paragraf}>
-          Every dish we prepare today is the result of a dedicated search for
-          the perfect balance between tradition and modern taste. We collaborate
-          with the finest suppliers of spices and ingredients to preserve the
-          authenticity of each recipe, whether it’s the legendary Chicken Tikka
-          Masala, the flavorful Dal Makhani, or freshly baked Naan straight from
-          the tandoor.
-        </p>
+        <p className={scss.paragraf}>{t('india_about')}</p>
+        <p className={scss.paragraf}>{t('india_about2')}</p>
+        <p className={scss.paragraf}>{t('india_about3')}</p>
       </div>
       <div className={scss.foto_cotainer}>
         <img className={scss.foto} src="/img/about/about1.jpg" alt="men" />

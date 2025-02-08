@@ -1,16 +1,19 @@
 import scss from './MenuPopular.module.scss';
 import Title from '../Title/Title.tsx';
 import MyButton from '../Button/MyButton.tsx';
+import { useTranslation } from 'react-i18next';
+
 export default function MenuPopular(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <div className={scss.container}>
-      <Title text={'POPULAR MENU'} />
+      <Title text={t('popular_Menu')} />
       <div className={scss.menu}>
         <div className={scss.container_box}>
           <div className={scss.hidden__box}>
             <div className={scss.hidden__text}>
               <span className={scss.hidden__paragraph}>
-                <MyButton text="ORDER" padding="20px 80px" />
+                <MyButton text={t('popular_Button')} padding="20px 80px" />
               </span>
             </div>
             <img
@@ -20,9 +23,7 @@ export default function MenuPopular(): JSX.Element {
             />
             <div className={scss.flex}>
               <h4 className={scss.menu_img_title}>Chicken Tikka Masala</h4>
-              <p className={scss.menu_img_paragraf}>
-                juicy chicken fillet in a rich tomato and cream sauce.
-              </p>
+              <p className={scss.menu_img_paragraf}>{t('popular_Chicken')}</p>
             </div>
           </div>
         </div>
@@ -30,7 +31,7 @@ export default function MenuPopular(): JSX.Element {
           <div className={scss.hidden__box}>
             <div className={scss.hidden__text}>
               <span className={scss.hidden__paragraph}>
-                <MyButton text="ORDER" padding="20px 80px" />
+                <MyButton text={t('popular_Button')} padding="20px 80px" />
               </span>
             </div>
             <img
@@ -40,9 +41,7 @@ export default function MenuPopular(): JSX.Element {
             />
             <div className={scss.flex}>
               <h4 className={scss.menu_img_title}>Biryani</h4>
-              <p className={scss.menu_img_paragraf}>
-                fragrant rice with spices and tender meat or vegetables.
-              </p>
+              <p className={scss.menu_img_paragraf}>{t('popular_Biryani')}</p>
             </div>
           </div>
         </div>
@@ -50,7 +49,7 @@ export default function MenuPopular(): JSX.Element {
           <div className={scss.hidden__box}>
             <div className={scss.hidden__text}>
               <span className={scss.hidden__paragraph}>
-                <MyButton text="ORDER" padding="20px 80px" />
+                <MyButton text={t('popular_Button')} padding="20px 80px" />
               </span>
             </div>
             <img
@@ -60,9 +59,7 @@ export default function MenuPopular(): JSX.Element {
             />
             <div className={scss.flex}>
               <h4 className={scss.menu_img_title}>Dosa</h4>
-              <p className={scss.menu_img_paragraf}>
-                thin crispy pancake with savory fillings.
-              </p>
+              <p className={scss.menu_img_paragraf}>{t('popular_Dosa')}</p>
             </div>
           </div>
         </div>
@@ -70,7 +67,7 @@ export default function MenuPopular(): JSX.Element {
           <div className={scss.hidden__box}>
             <div className={scss.hidden__text}>
               <span className={scss.hidden__paragraph}>
-                <MyButton text="ORDER" padding="20px 80px" />
+                <MyButton text={t('popular_Button')} padding="20px 80px" />
               </span>
             </div>
             <img
@@ -80,9 +77,7 @@ export default function MenuPopular(): JSX.Element {
             />
             <div className={scss.flex}>
               <h4 className={scss.menu_img_title}>Mango Lassi</h4>
-              <p className={scss.menu_img_paragraf}>
-                refreshing drink based on yogurt and ripe mango.
-              </p>
+              <p className={scss.menu_img_paragraf}>{t('popular_Mango')}</p>
             </div>
           </div>
         </div>

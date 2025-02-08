@@ -2,14 +2,17 @@ import { IoLogoInstagram, IoLogoYoutube, IoMdMail } from 'react-icons/io';
 import { FaFacebook, FaPinterest } from 'react-icons/fa';
 import scss from './footer.module.scss';
 import { BsFillTelephoneInboundFill } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
+
 export default function Footer(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <section className={scss.container}>
       <div>
         <a href={'/'} className={scss.logo}>
           India Cafe
         </a>
-        <p>Get in touch with us via social media.</p>
+        <p>{t('footer_text')}</p>
         <ul className={scss.flex}>
           <li>
             <a href="https://www.youtube.com/" className={scss.icon}>
@@ -48,7 +51,7 @@ export default function Footer(): JSX.Element {
             </a>
           </li>
         </ul>
-        <p>© 2024 India Cafe all rights reserved</p>
+        <p>© 2024 {t('footer_text2')}</p>
       </div>
       <div>
         <p>
@@ -56,7 +59,7 @@ export default function Footer(): JSX.Element {
             style={{ color: 'black', marginRight: '10px' }}
             size={23}
           />
-          Phone:
+          {t('contact_LinkPhone')}:
           <a href={`tel:+48574773134`} className={scss.contact}>
             {' '}
             +48574773134
@@ -64,7 +67,7 @@ export default function Footer(): JSX.Element {
         </p>
         <p>
           <IoMdMail style={{ color: 'black', marginRight: '10px' }} size={23} />
-          Email:
+          {t('contact_LinkMail')}:
           <a href={`mailto:yaromenko.mail@gmail.com`} className={scss.contact}>
             {' '}
             yaromenko.mail@gmail.com
@@ -75,17 +78,17 @@ export default function Footer(): JSX.Element {
         <ul>
           <li>
             <a href="/" className={scss.icon}>
-              HOME
+              {t('HOME')}
             </a>
           </li>
           <li>
             <a href="/Menu" className={scss.icon}>
-              MENU
+              {t('MENU')}
             </a>
           </li>
           <li>
             <a href="/Delivery" className={scss.icon}>
-              DELIVERY
+              {t('DELIVERY')}
             </a>
           </li>
         </ul>

@@ -5,11 +5,14 @@ import { IoMdMail, IoMdTime } from 'react-icons/io';
 import { MdContactPhone } from 'react-icons/md';
 import scss from './contact.module.scss';
 import { BsFillTelephoneInboundFill } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
+
 export default function Contact(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <div>
       <div>
-        <Title text={'Contact detais'} />
+        <Title text={t('contact_Title')} />
       </div>
       <div className={scss.container}>
         <div>
@@ -28,7 +31,7 @@ export default function Contact(): JSX.Element {
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
-                  Contact{' '}
+                  {t('contact_Title')}{' '}
                   <MdContactPhone
                     style={{ color: '#f89345', marginLeft: '10px' }}
                   />
@@ -39,7 +42,7 @@ export default function Contact(): JSX.Element {
                       style={{ color: '#f89345', marginRight: '10px' }}
                       size={23}
                     />
-                    Phone:
+                    {t('contact_LinkPhone')}:
                     <a href={`tel:+48574773134`} className={scss.contact}>
                       {' '}
                       +48574773134
@@ -50,7 +53,7 @@ export default function Contact(): JSX.Element {
                       style={{ color: '#f89345', marginRight: '10px' }}
                       size={23}
                     />
-                    Email:
+                    {t('contact_LinkMail')}:
                     <a
                       href={`mailto:yaromenko.mail@gmail.com`}
                       className={scss.contact}
@@ -64,31 +67,31 @@ export default function Contact(): JSX.Element {
               <Accordion.Item eventKey="1">
                 <Accordion.Header>
                   {' '}
-                  Open Hours{' '}
+                  {t('contact_Open')}{' '}
                   <IoMdTime style={{ color: '#f89345', marginLeft: '10px' }} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <ul>
                     <li>
-                      <p className={scss.color}>Monday - Thursday</p>
+                      <p className={scss.color}>{t('open_MonThu')}</p>
                     </li>
                     <li>
                       <p>11:30 am - 08:00 pm</p>
                     </li>
                     <li>
-                      <p className={scss.color}>Friday</p>
+                      <p className={scss.color}>{t('open_Friday')}</p>
                     </li>
                     <li>
                       <p>11:30 am - 10:00 pm</p>
                     </li>
                     <li>
-                      <p className={scss.color}>Saturday</p>
+                      <p className={scss.color}>{t('open_Saturday')}</p>
                     </li>
                     <li>
                       <p>11:30 am - 10:00 pm</p>
                     </li>
                     <li>
-                      <p className={scss.color}>Sunday</p>
+                      <p className={scss.color}>{t('open_Sunday')}</p>
                     </li>
                     <li>
                       <p>11:30 am - 9:00 pm</p>
