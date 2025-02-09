@@ -6,11 +6,10 @@ import { MdContactPhone } from 'react-icons/md';
 import scss from './contact.module.scss';
 import { BsFillTelephoneInboundFill } from 'react-icons/bs';
 import { useTranslation } from 'react-i18next';
-
 export default function Contact(): JSX.Element {
   const { t } = useTranslation();
   return (
-    <div>
+    <section>
       <div>
         <Title text={t('contact_Title')} />
       </div>
@@ -103,6 +102,6 @@ export default function Contact(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

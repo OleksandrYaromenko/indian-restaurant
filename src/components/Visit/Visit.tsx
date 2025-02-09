@@ -11,6 +11,9 @@ export default function Visit(): JSX.Element {
   return (
     <div className={scss.container}>
       <Title text={t('visit_title')} />
+    <section className={scss.container}>
+      <Title text="WHY VISIT US?" />
+
       <div>
         <Swiper
           cssMode={true}
@@ -82,6 +85,6 @@ export default function Visit(): JSX.Element {
           </SwiperSlide>
         </Swiper>
       </div>
-    </div>
+    </section>
   );
 }

@@ -2,12 +2,13 @@ import scss from './MenuPopular.module.scss';
 import Title from '../Title/Title.tsx';
 import MyButton from '../Button/MyButton.tsx';
 import { useTranslation } from 'react-i18next';
-
 export default function MenuPopular(): JSX.Element {
   const { t } = useTranslation();
   return (
     <div className={scss.container}>
       <Title text={t('popular_Menu')} />
+    <section className={scss.container}>
+      <Title text={'POPULAR MENU'} />
       <div className={scss.menu}>
         <div className={scss.container_box}>
           <div className={scss.hidden__box}>
@@ -82,6 +83,6 @@ export default function MenuPopular(): JSX.Element {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

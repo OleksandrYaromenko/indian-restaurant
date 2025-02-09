@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 export default function Footer(): JSX.Element {
   const { t } = useTranslation();
   return (
-    <section className={scss.container}>
+    <div className={scss.container}>
       <div>
         <a href={'/'} className={scss.logo}>
           India Cafe
@@ -93,6 +93,6 @@ export default function Footer(): JSX.Element {
           </li>
         </ul>
       </div>
-    </section>
+    </div>
   );
 }

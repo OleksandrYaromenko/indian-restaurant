@@ -7,6 +7,9 @@ export default function About(): JSX.Element {
   return (
     <div className={scss.container}>
       <Title text={t('title_about')} />
+    <section className={scss.container}>
+      <Title text="ABOUT US" />
+
       <div className={scss.paragraf_container}>
         <p className={scss.paragraf}>{t('india_about')}</p>
         <p className={scss.paragraf}>{t('india_about2')}</p>
@@ -17,6 +20,6 @@ export default function About(): JSX.Element {
         <img className={scss.foto} src="/img/about/about2.jpg" alt="restoran" />
         <img className={scss.foto} src="/img/about/about3.jpg" alt="women" />
       </div>
-    </div>
+    </section>
   );
 }
