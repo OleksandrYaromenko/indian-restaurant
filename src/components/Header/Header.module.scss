@@ -12,6 +12,7 @@
   border-radius: 300px;
   z-index: 999;
 }
+
 .nav {
   display: flex;
   flex-direction: row;
@@ -20,6 +21,7 @@
   gap: 43px;
   margin-right: 40px;
 }
+
 .logo {
   font-family: 'Kanit';
   font-style: normal;
@@ -32,6 +34,7 @@
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
+
 .navLink {
   font-family: 'Inter';
   font-style: normal;
@@ -43,6 +46,14 @@
   transition: 0.4s;
   color: #0d0e06;
 }
+
 .navLink:hover {
   color: #faaf75;
+}
+
+.selectBox {
+
+  padding: 4px;
+  background-color: #faaf75;
+  border-radius: 50px;
 }

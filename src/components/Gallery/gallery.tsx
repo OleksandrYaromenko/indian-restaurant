@@ -4,11 +4,13 @@ import 'swiper/css';
 import 'swiper/css/effect-cards';
 import scss from './gallery.module.scss';
 import { EffectCards } from 'swiper/modules';
+import { useTranslation } from 'react-i18next';
 
 export default function Gallery(): JSX.Element {
+  const { t } = useTranslation();
   return (
     <section className={scss.section}>
-      <Title text={'Gallery'} />
+      <Title text={t('gallery_Title')} />
       <div className={scss.container}>
         <Swiper
           effect={'cards'}
